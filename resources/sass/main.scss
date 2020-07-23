@@ -1,0 +1,130 @@
+
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .mainMenu {
+        display: inline-block;
+        float: left;
+        padding: 10px;
+    }
+
+    .productImg {
+        width: 50%; 
+        height: 300px; 
+        object-fit: cover;
+    }
+
+    .secondMenu{
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        display: inline-block;
+        float: left;
+        text-align: left;
+        width: 50%;
+        padding: 10px;
+        color: #284646;
+    }
+
+    .menu-header {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(236, 211, 178);
+    }
+
+    .buttons {
+        background-color: rgb(236, 211, 178);
+        color: rgb(94, 94, 94);
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 15px;
+        width: 100px;
+        height: 30px;
+    }
+
+    .buttons:hover {
+        transition: 0.5s;
+        background-color: rgb(236, 236, 236);
+    }
+
+    
+    .nav-btn {
+        background-color: #fff;
+    }
+
+
+    #cart-count {
+        position: relative;
+        .mini-cart-list {
+            display: none;
+            position: absolute;
+            width: 220px;
+            background: #fff;
+            opacity: 0.75;
+            top: 40px;
+            right: -80px;
+            color: rgb(92, 92, 92);
+            z-index: 1;
+        }
+        &:hover {
+            .mini-cart-list {
+                display: block; 
+                transition: 1s ease-in-out;
+                z-index: 1;
+            }
+        }
+    }
+    .shop-cart {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+        span {
+            display: inline-block;
+            &.count {
+                margin-left: 11px;
+            }
+            &.total {
+                margin-left: 4px;
+            }
+        }
+    }
+    .add-form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 22px;
+        [type=text] {
+            width: 20px;
+            display: inline-block;
+        }
+    }
+    
+    .navigacija {
+        background-color: rgb(236, 211, 178);
+        border-radius: 10px;
+    }
+
+    .form-inline {
+        background-color: none;
+    }
+
+    .card {
+        display: flex;
+        float: left;
+        width: 30%;
+        justify-content: center;
+        margin: 0 5px;
+    }
+
+    .containeris {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
