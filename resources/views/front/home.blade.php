@@ -1,34 +1,32 @@
 @extends('front.app')
 
 @section('content')
+<img class="heroImg" src="images/maistas.jpg">
 <div class="containeris">
+    
     @foreach ($products as $product)
-   
-        
             <div class="card">
                 <div class="menu-header">{{$product->title}}</div>
+                @foreach ($product->getImages as $photo)
+                    <img class="productImg" src="{{asset('images/products/'.$photo->photo)}}">
+                    @endforeach
                 <div class="mainMenu">
                     <div class="secondMenu">
                         <div>Kaina: {{$product->price}}</div>
-                        <br><hr>
-                        <div>Išpardavimo kaina: {{$product->sale}}</div>
-                        <br><hr>
+                        <hr>
                         <div>Prekės aprašymas: <br>{{$product->description}}</div>
-                        <br><hr>
+                        <hr>
                     </div>
-                    @foreach ($product->getImages as $photo)
-                    <img class="productImg" src="{{asset('images/products/'.$photo->photo)}}">
-                    @endforeach
-                    <form action="{{route('front.add')}}" method="POST" class="add-form">
+                    
+                    <div class="form">
+                        <input type="hidden" name="route" value="{{route('front.add-js')}}">
                         <input type="hidden" name="product_id" value="{{$product->id}}">
-                        <input type="text" name="count" value="0"><br><br>
-                        @csrf
-                        <button type="submit" class="buttons">Į krepšelį</button>
-                    </form>
-                </div>
+                        <input class="inputs" type="text" name="count" value="0"><br><br>
+                        <button class="add-button buttons" type="button">Į krepšelį</button>
+                    </div>
             </div>
-        
-    
-    @endforeach
-</div>
+        </div>
+        @endforeach
+    </div>
 @endsection
+

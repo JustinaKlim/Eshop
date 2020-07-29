@@ -43,7 +43,6 @@ class ProductController extends Controller
 
         $product->title = $request->product_title;
         $product->price = $request->product_price;
-        $product->sale = $request->product_sale;
         $product->description = $request->product_description;
 
         $product->save();

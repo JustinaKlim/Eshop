@@ -26,6 +26,10 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     ESHOP
                 </a>
+                {{-- <img src="/images/'shop.jpg" enctype="multipart/form-data"> --}}
+                {{-- <?php
+                // $encoded_data = base64_encode(file_get_contents('./images/shop.jpg'));
+                ?>   --}}
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>

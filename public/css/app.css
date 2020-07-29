@@ -10932,28 +10932,37 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.mainMenu {
-  display: inline-block;
-  float: left;
-  padding: 10px;
-}
-
 .productImg {
-  width: 50%;
+  width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-bottom: 1px solid #dfdfdf;
 }
 
-.secondMenu {
+.heroImg {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-attachment: fixed;
+}
+
+.secondMenu,
+.form {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   display: inline-block;
   float: left;
-  text-align: left;
-  width: 50%;
+  text-align: center;
+  width: 100%;
   padding: 10px;
   color: #284646;
+}
+
+.form {
+  padding: 0;
+  padding-bottom: 10px;
 }
 
 .menu-header {
@@ -10978,6 +10987,11 @@ body {
   background-color: #ececec;
 }
 
+.inputs {
+  width: 30px;
+  text-align: center;
+}
+
 .nav-btn {
   background-color: #fff;
 }
@@ -10991,7 +11005,6 @@ body {
   position: absolute;
   width: 220px;
   background: #fff;
-  opacity: 0.75;
   top: 40px;
   right: -80px;
   color: #5c5c5c;
@@ -11000,7 +11013,6 @@ body {
 
 #cart-count:hover .mini-cart-list {
   display: block;
-  transition: 1s ease-in-out;
   z-index: 1;
 }
 
@@ -11050,17 +11062,17 @@ body {
 }
 
 .card {
-  display: flex;
+  display: inline-block;
   float: left;
-  width: 30%;
   justify-content: center;
-  margin: 0 5px;
+  margin: 15px 5px;
 }
 
 .containeris {
-  width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   flex-direction: row;
+  margin: 10px 50px;
 }
 

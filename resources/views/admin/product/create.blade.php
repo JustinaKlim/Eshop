@@ -15,9 +15,7 @@
                         <label>Price:</label>
                         <input type="text" name="product_price">
                         <hr><br>
-                        <label>Sale price:</label>
-                        <input type="text" name="product_sale">
-                        <hr><br>
+                       
                         <label>Description:</label>
                         <input type="textarea" name="product_description">
                         <hr><br>
